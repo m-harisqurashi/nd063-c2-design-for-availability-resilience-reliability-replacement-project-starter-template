@@ -1,0 +1,27 @@
+[ec2-user@ip-10-0-1-91 ~]$ mysql -h udacity-replica-db.cyhfc1nhu0lr.us-east-2.rds.amazonaws.com -D udacity -u admin -p
+Enter password: 
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [udacity]> INSERT INTO books (id,name,author) VALUES(1,"Third  Book","HQ");
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> select * from books;
++------+--------------+--------+
+| id   | name         | author |
++------+--------------+--------+
+|    1 | Some Book    | HQ     |
+|    1 | Another Book | HQ     |
+|    1 | Third  Book  | HQ     |
++------+--------------+--------+
+3 rows in set (0.00 sec)
+
+MySQL [udacity]> 
