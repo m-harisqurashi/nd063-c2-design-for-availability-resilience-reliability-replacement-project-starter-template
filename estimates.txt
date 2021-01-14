@@ -5,4 +5,5 @@
 3. Minimum RPO for a single AZ outage
 	Data loss is minimal as the system fails over from one instance to another instance causes RPO to be zero
 4. Minimum RPO for a single region outage
-	Read replication is asynchronous hence minimum RPO would be zero
+	A relatively longer RPO for about one hour would be reasonable for a single region outage
+
